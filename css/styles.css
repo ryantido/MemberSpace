@@ -1,0 +1,229 @@
+*,::before,::after{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.language, .profile-option{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1.8px solid  rgba(0, 0, 0, 0.425);
+    margin: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.app-logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 100px;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(212, 185, 136, 0.990);
+    border-radius: 10px;
+    border: 2px solid #374151;
+    margin-top: 5px;
+    height: 100px;
+    box-shadow: 0 5px 15px 2px ;
+    width: 100%;
+    z-index: 30;
+}
+
+.register{
+    max-width: 500px;
+    max-height: 680px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login{
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    max-height: 450px;
+    height: 50%;
+    padding: 15px;
+    font-weight: bold;
+    box-shadow: 2px 5px 12px 12px;
+    background-color: rgba(245, 245, 245, 0.685);
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.login form input{
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: 18px;
+    letter-spacing: 0px;
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.account-option{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.agree{
+    display: flex;
+    font-size: large;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.agree label{
+    display: flex;
+    width: 800%;
+    height: 100%;
+    align-items: center;
+}
+
+.agree input[type="checkbox"]{
+    scale: 0.5;
+    margin: 0;
+}
+
+.account-option a{
+    color: #0066ffc9;
+}
+
+.login form input[type="submit"]{
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid rgba(245, 245, 245, 0.215);
+    background: #0ac6ffc5;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover{
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.445);
+    transition: all ease-in-out 0.8s;
+    background-color: #0a74ffef;
+}
+
+
+.inscription{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.verification{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.verification a{
+    color: rgb(52, 52, 255);
+}
+
+.inscription label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.role{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 0;
+    border: 1.5px solid #374151;
+    border-radius: 10px;
+    padding: 10px 15px 10px 0;
+}
+
+.inscription input{
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: 18px;
+    letter-spacing: 0px;
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.role input[type="checkbox"]{
+    scale: 0.5;
+}
+
+.register form input[type="submit"]{
+    padding: .65rem;
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    background: #0ac6ffe7;
+    border-radius: .35rem;
+    font-family: poppins, sans-serif;
+}
+
+
+.register{
+    min-width: 360px;
+    height: 80vh;
+    min-height: 695px;
+    margin: 50px  auto ;
+    background: rgba(245, 245, 245, 0.589);
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.699);
+    padding: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.register-info{
+    margin-bottom: 15px;
+}
+
+.register .form-header{
+    width: 100%;
+    font-size: larger;
+}

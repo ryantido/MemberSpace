@@ -1,0 +1,149 @@
+.flex-row a:hover{
+    cursor: pointer;
+    opacity: .8;
+    color: lightsalmon !important;
+    transform: skewX(15deg);
+}
+
+.flex-row a:hover:after{
+    width: 100%;    
+}
+
+.flex-row a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: lightsalmon;
+    bottom: -5px;
+    left: -2.5%;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+    
+a:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+
+a{
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+    color: #1b1b1b;
+    position: relative;
+    font-weight:bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 0;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.4);
+    background-color:#000000f3;
+    color: lightsalmon;
+}
+
+header span{
+    color: white;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 900;
+    transition: all .65s .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    cursor:context-menu
+}
+
+header span:hover{
+    transform: skewX(15deg);
+    color: lightsalmon;
+}
+
+.logo-side{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    max-width: 60%;
+}
+
+.option{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    max-width: 30%;
+    align-items: center;
+}
+
+.active-option{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    font-weight:bold;
+    font-family: poppins, sans-serif;
+    padding: .8rem 1.5rem;
+    background: lightsalmon;
+    font-size: larger;
+    border-radius: .5rem;
+    color:#f0f0f0;
+    cursor: pointer;
+}
+
+.setting{
+    width: 28px;
+    height: auto;
+}
+
+.sign-in{
+    padding: .8rem 1.5rem;
+    background: lightsalmon;
+    font-size: larger;
+    border-radius: .5rem;
+    color:#f0f0f0;
+    font-weight:bold;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+
+.options{
+    width: 100%;
+    margin-top: 25px;
+    z-index: 100;
+    position: absolute;
+    padding: 20px 0 0 25px;
+    background: white;
+    width: 160px;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    border-radius:.5rem;
+    animation: bounce 1.5s 1ms 5 ease alternate;
+}
+
+.options.hidden{
+    display: none;
+}
+
+.options p{
+    background: lightsalmon;
+    border-radius: .5rem;
+    font-weight:bold;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    width: 300%;
+}
+
+@keyframes bounce{
+
+    0%, 100%{
+        transform: rotate(0);
+    }25%{
+        transform: rotate(-5deg);
+    }50%{
+        transform: rotate(5deg);
+    }
+    
+}

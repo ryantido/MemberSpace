@@ -1,0 +1,20 @@
+.member-container{
+    width: 96%;
+    height: 82%;
+    box-shadow: 0 0 8px 3px #ccc;
+    margin: 25px auto;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: all 1.5s .3ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.member-container h1{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: poppins, sans-serif;
+}
