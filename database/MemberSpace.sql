@@ -46,14 +46,6 @@ CREATE TABLE `MemberSpace` (
 -- Déchargement des données de la table `MemberSpace`
 --
 
-INSERT INTO `MemberSpace` (`id`, `firstname`, `lastname`, `email`, `password`, `token`, `role`, `phone`, `agree`, `is_valid`, `created_at`, `update_at`) VALUES
-(1, 'Lamine', 'Yamal', 'ViscaBarcelona@español.com', '$2y$10$c9FSkAbFfPhlkg4fPlEMCu81dMRH/elrMT6ws8P4eLDkHBlVUiTWO', 'valid', 'admin', '0123456789', 0, 1, '2024-12-28 15:06:23', '2025-04-17 22:54:40'),
-(2, 'Arthur', 'stiller', 'princearthur34@gmail.com', '$2y$10$c9FSkAbFfPhlkg4fPlEMCu81dMRH/elrMT6ws8P4eLDkHBlVUiTWO', 'valid', 'admin', '699506071', 0, 1, '2024-12-29 20:06:48', '2025-04-17 22:57:11'),
-(3, 'Pep', 'Garduola', 'GarduolaCitizen@machester.en', '$2y$10$c9FSkAbFfPhlkg4fPlEMCu81dMRH/elrMT6ws8P4eLDkHBlVUiTWO', 'kh3hj$al0zifZ', 'employee', '0123456789', 0, 0, '2024-12-28 15:30:31', '2025-02-24 23:22:57'),
-(4, 'Markov', 'Nikov', 'markov@nikov.com', '$2y$10$c9FSkAbFfPhlkg4fPlEMCu81dMRH/elrMT6ws8P4eLDkHBlVUiTWO', 'valid', 'admin', '689898787', 1, 1, '2024-12-29 22:21:18', '2025-04-19 13:22:28'),
-(5, 'Marquinhos', 'Paris', 'intermiami#1@gmail.com', '$2y$10$PkgOV8OAssAelPgozN5b.uqfCaWB8sg2MwaJIS2JFJy7wqQS38Xz6', 'valid', 'employee', '689898787', 0, 1, '2025-04-17 22:25:49', '2025-04-17 21:26:06'),
-(6, 'Pepsi', 'Stein', 'mrSTein@gmail.fr', '$2y$10$V23/JeVDYcUdJuQFXRKRUudB8bHF0gZEIQ60gAgrya2rfWzMigVAm', 'valid', 'admin', '689898787', 1, 1, '2025-04-19 16:52:40', '2025-04-19 15:57:00');
-
 --
 -- Index pour les tables déchargées
 --
@@ -72,7 +64,7 @@ ALTER TABLE `MemberSpace`
 -- AUTO_INCREMENT pour la table `MemberSpace`
 --
 ALTER TABLE `MemberSpace`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
